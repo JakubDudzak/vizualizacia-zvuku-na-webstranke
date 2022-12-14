@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Vizualizácia zvuku na webstránke</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Righteous|Nova+Square"
+            rel="stylesheet"
+            type="text/css"
+    />
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/app.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Vizualizácia zvuku na webstránke</h1>
+    </header>
+
+    <canvas class="visualizer" width="640" height="100"></canvas>
+
+    <form class="controls">
+        <div>
+            <label for="visual">Zobraziť</label>
+            <select id="visual" name="visual">
+                <option value="sinewave">Sínusový priebeh</option>
+                <option value="frequencybars" selected>Amplitúdové spektrum</option>
+                <option value="off">Off</option>
+            </select>
+        </div>
+    </form>
+</div>
+<script src="scripts/app.js"></script>
+</body>
+</html>
