@@ -18,7 +18,7 @@ const audioAnalyser = new AnalyserNode(audioContext, {
   minDecibels: -90,
   smoothingTimeConstant: 0.85,
 });
-
+// toto sa spyta uzivatela pre potvrdenie pristupu k mikrofonu, po potvrdeni vstup z mikrofonu (stream) pošle do funkcie processStream
 navigator.mediaDevices
   .getUserMedia({ audio: true })
   .then((stream) => processStream(stream));
